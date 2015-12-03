@@ -109,9 +109,17 @@ h4{
 
 h5{
 	font-size: 16px;
-	padding-top: 15px;
 	padding-bottom:10px;
 	padding-left: 20px;
+	padding-top: 10px;
+}
+
+h6 {
+	font-size:11px;
+	padding-top: 8px;
+	padding-left:20px;
+	padding-bottom: 5px;
+	color: #cacfd2;
 }
 
 .scrollbox {
@@ -157,6 +165,26 @@ h5{
 .imgwrap img {
 	width: 100%;
 }
+
+.imgwrap2 {
+	float: right;
+	width: 270px;
+	height: 70px;
+	overflow: hidden;
+	margin-top: 15px;
+}
+
+.imgwrap2 img {
+	width: 100%;
+}
+
+.imgdescription {
+  	position: absolute;
+  	color: black;
+  	visibility: visible;
+  	opacity: 1;
+}
+
 
 .adfooter {
 	background: #f2f2f2;
@@ -221,77 +249,20 @@ a {
 }
 
 /* MOBILE */
-@media only screen and (max-width: 640px) {
+/* For devices larger than 400px */
+@media (max-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
 
-	.container {
-		width: 480px;
-	}
-
-	.header {
-		position: absolute;
-	}
-
-	.nav {
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		border: 5px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 4px 0 4px 4px;
-	}
-
-	.logo img {
-		max-width: 200px;
-	}
-
-	.categories {
-		display: none;
-	}
-
-	footer {
-		width: 480px;
-	}
-
-	/*.titles {
-		display: inline-block;
-	}
-	*/ 
-	html {
-		font-size: 90%;
-	}
-		
-	a.menu-link {
-  	    float: right;
-	    display: block;
-	    padding: 1em;
-	}
-
-	nav[role=navigation] {
-		clear: both;
-		-webkit-transition: all 0.3s ease-out;  
-		-moz-transition: all 0.3s ease-out;
-		-ms-transition: all 0.3s ease-out;
-		-o-transition: all 0.3s ease-out;
-		transition: all 0.3s ease-out;
-	}
-
-	.js nav[role=navigation] {
-		overflow: hidden;
-		max-height: 0;
-	}
-	nav[role=navigation].active {
-		max-height: 15em;
-	}
-	nav[role=navigation] ul {
-		margin: 0;
-		padding: 0;
-		border-top: 1px solid #808080;
-	}
-	nav[role=navigation] li a {
-		display: block;
-		padding: 0.8em;
-		border-bottom: 1px solid #808080;
-	} 
+/* For devices larger than 550px */
+@media (max-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
